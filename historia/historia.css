@@ -1,15 +1,58 @@
+
+footer {
+    margin-top: 2rem;
+}
+
 #main-image {
     width: 100vw;
     height: auto;
-    margin-top: 7rem;
+    max-width: 50rem;
+    padding:0 0.2rem;
+    display: block;
+    padding-top: 6rem;
+    margin: 0 auto;
+}
+
+
+.main-img__secondary {
+    
+    width: 40%;
+    height: auto;
+    padding:0 0.2rem;
+    max-width: 35rem;
 }
 
 .main-title {
     color: #181818;
-    padding: 0 0.2rem;
 }
 
 .main-title::first-letter {
-    color: #00587F;
-    
+    color: #00587F;  
+}
+
+.main--section__subtitle {
+    color: #282828;
+}
+
+.main--section {
+    padding: 0 0.2rem;    
+}
+
+@media (min-width: 700px) {
+
+    main {
+        width: 66%;
+        margin: 0 auto 0 auto;
+    }
+
+    .main--section {
+        display: inline-block;
+    }
+
+    .main--section img,
+    .main--section div {
+        vertical-align: middle;
+        display: inline-block;
+
+    }
 }
