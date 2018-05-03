@@ -12,17 +12,13 @@ header {
 }
 
 .main-title {
-    color: #080808;
+    color: #00587F;
     font-size: 2rem;
+    text-align: center;
 }
 
 .main-subtitle {
     color: #181818;
-}
-
-.main-title::first-letter {
-    color: #00587F;
-    
 }
 
 .section-image {
@@ -51,12 +47,22 @@ li {
   }
 
 @media (min-width: 60rem) {
+
+    body {
+        font-size: 1.05rem;
+    }
+
     #main-image {
         background-position-y: 45%;
-        height: 350px;
+        height: 350px;  
         max-width: 1920px;
         margin: 0 auto;
     }   
+
+    .main-title {
+        text-align: left;
+        font-size: 2.5rem;
+    }
     
     .main-section {
         display: flex;

@@ -19,14 +19,12 @@
   background-position-y: bottom;
   background-position-x: center;
   text-align: center;
-  padding-top: 45vh;
-  font-size: 1.9rem;
-  color: #ccc; }
+  padding-top: 46vh;
+  font-size: 2rem;  color: white; }
 
 .highlight {
   color: #00587F;
   font-weight: bold; }
-
 
 @media (min-width: 40rem) {
   #myslider div[id^="slider"] {

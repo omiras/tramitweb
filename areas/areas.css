@@ -1,0 +1,77 @@
+header {
+    position: relative;
+}
+#main-image {
+    background-image: url("../img/planogeneral.jpg"); 
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: right; 
+    filter: sepia(90%) hue-rotate(190deg) saturate(70%);
+    margin-bottom: 1rem;
+}
+
+.main-title {
+    color: #00587F;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.column {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column img {
+    width: 100%;
+    padding-bottom: 1rem;
+    max-width: 600px;
+}
+
+.column div h3 {
+    color: #00B1FF;
+}
+
+.column div p {
+    color:white;
+}
+
+.bottom-left {
+    position: absolute;
+    background-color: rgba(0,0,0,0.60);
+    bottom: 10%;
+    overflow: hidden;
+    padding-left: 0.1rem;
+}
+
+.main-image__container {
+    position: relative;
+    text-align:left;
+}
+
+@media (min-width: 60rem) {
+
+    body {
+        font-size: 1.05rem;
+    }
+    #main-image {
+        background-position-y: 45%;
+        height: 350px;  
+        max-width: 1920px;
+        margin: 0 auto;
+    }     
+
+    .column {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .main-title {
+        font-size: 3rem;
+    }
+
+}

@@ -41,7 +41,7 @@
     height: 100vh;
     width: 100vw;
     z-index: 90;
-    background-color: rgba(0, 88, 127, 0.85);
+    background-color: rgba(0, 88, 127, 0.95);
     transform: translateX(-100%); }
   
   .open-overlay {
