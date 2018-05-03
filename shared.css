@@ -25,7 +25,7 @@
   a {
     text-decoration: none; }
   
-  h4 {
+  footer h4 {
     color: #00587F; }
   
   .header__brand img {
@@ -36,6 +36,8 @@
 
 .mobile-nav {
     position: fixed;
+    left:0;
+    top:0;
     height: 100vh;
     width: 100vw;
     z-index: 90;
