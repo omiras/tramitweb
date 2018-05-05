@@ -1,0 +1,65 @@
+header {
+    position: relative;
+}
+.main-title {
+    color: #00587F;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.tarjeta {
+    padding: 0 0.2rem;
+}
+
+.tarjeta div {
+    padding: 0 1rem;
+    line-height: 1.4;
+    background-color: rgba(0, 88, 127, 1);
+    color:white;
+    border-radius: 4px;
+
+}
+
+.tarjeta div p{
+    margin: 0;
+}
+
+
+.main-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 50rem) {
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 75%;
+        margin: 0 auto;
+        font-size: 1.15em;
+    }
+
+    .main-flex {
+        flex-grow: 1;
+
+    }
+
+    #formulario {
+        flex-grow: 4;
+    }
+
+    .main-title {
+        font-size: 3rem;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+
+}
+
