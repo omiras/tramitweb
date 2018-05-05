@@ -25,12 +25,13 @@
   }
   
   a {
-    text-decoration: none; }
+    text-decoration: none; 
+    outline: none;}
   
   footer h4 {
     color: #00587F; }
   
-  .header__brand img {
+  .header-brand img {
     width: auto;
     height: 4rem;
     background: transparent; }
