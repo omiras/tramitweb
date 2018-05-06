@@ -23,9 +23,11 @@
     padding: 0 0.2rem; 
   }
   
-  a {
+  a,
+  a:visited {
     text-decoration: none; 
-    outline: none;}
+    outline: none;
+  color: inherit;}
   
   footer h4 {
     color: #00587F; }
