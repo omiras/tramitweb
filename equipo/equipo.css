@@ -20,6 +20,7 @@ header {
     width: auto;
     max-width: 512px; 
     max-height: 40vh; 
+    min-height: 267px;
     margin-bottom: 1rem;
     filter: grayscale(100%);
 }
