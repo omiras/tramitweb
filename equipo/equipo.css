@@ -2,11 +2,6 @@ header {
     position: relative;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-}
-
 .main-title {
     color: #00587F;
     font-size: 2rem;
