@@ -17,5 +17,5 @@ toggleButton.addEventListener("click", function() {
 });
 
 if (mobilecheck()) {
-    var phoneLink = document.querySelector(".footer-contact.telephone");
+    //var phoneLink = document.querySelector(".footer-contact.telephone");
 }
