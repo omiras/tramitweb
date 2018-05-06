@@ -25,7 +25,7 @@
                     <a href="historia/index.html">Historia</a>
                     <a href="areas/index.html">Areas de actuación</a>
                     <a href="equipo/index.html">Equipo</a>
-                    <a href="contacto/index.html">Contacto</a>
+                    <a href="contacto/">Contacto</a>
             </div>
     </nav>        
     <div id="myslider">
