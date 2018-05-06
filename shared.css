@@ -58,21 +58,17 @@
   .mobile-nav__links {
     position: relative;
     top: 20%;
-    /* 25% from the top */
     width: 100%;
-    /* 100% width */
     text-align: center;
-    /* Centered text/links */
     margin-top: 6rem;
-    /* 30px top margin to avoid conflict with the close button on smaller screens */ }
-  
+  }
   .mobile-nav__links a {
     padding: 0.5rem;
     text-decoration: none;
     font-size: 2rem;
     color: #00B1FF;
     display: block;
-    /* Display block instead of inline */ }
+}
   
   .mobile-nav__links a:hover,
   .mobile-nav__links a:focus {
@@ -96,7 +92,7 @@
     margin: 0.6rem 0; }
   
   .toggle-button__bar:nth-of-type(1).rotate {
-    transform: translateY(16px) rotate(-45deg);
+    transform: translateY(15px) rotate(-45deg);
     background-color: white; }
   
   .toggle-button__bar:nth-of-type(2).rotate {
