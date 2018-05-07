@@ -24,8 +24,8 @@
   font-size: 2rem;  color: white; }
 
 .highlight {
-  color: #00587F;
-  font-weight: bold; }
+  color: #009FE5;
+  font-weight: 700;}
 
 @media (min-width: 40rem) {
   #myslider div[id^="slider"] {

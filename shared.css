@@ -1,116 +1,234 @@
 * {
-    box-sizing: border-box; }
-  
-  html {
-    height: 100%; }
-  
-  body {
-    font-family: 'Lato', sans-serif;
-    margin: 0; }
-  
-  header {
-    position: absolute;
-    width: 100%;
-    z-index: 100;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: 1rem; }
-  
-  footer {
-    background-color: #f2f2f2;
-    padding: 0 0.2rem; 
-  }
-  
-  a,
-  a:visited {
-    text-decoration: none; 
-    outline: none;
-  color: inherit;}
+  box-sizing: border-box;
+}
 
-  footer h4 {
-    color: #00587F; }
-  
-  .header-brand img {
-    width: auto;
-    height: 4rem;
-    background: transparent; }
-  
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 0 0.2rem;
+}
+
+a, a:visited {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+footer h4 {
+  color: #00587F;
+}
+
+.header-brand img {
+  width: auto;
+  height: 4rem;
+  background: transparent;
+}
 
 .mobile-nav {
-    position: fixed;
-    left:0;
-    top:0;
-    height: 100vh;
-    width: 100vw;
-    z-index: 90;
-    background-color: rgba(0, 88, 127, 0.95);
-    transform: translateX(-100%); }
-  
-  .open-overlay {
-    display: block;
-    transform: translateX(0);
-    transition: transform 500ms ease-out;
-    /* Transition effects on hover (color) */
-    overflow: hidden; }
-  
-  .mobile-nav__links {
-    position: relative;
-    top: 20%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 90;
+  background-color: rgba(0, 88, 127, 0.95);
+  transform: translateX(-100%);
+}
+
+.open-overlay {
+  display: block;
+  transform: translateX(0);
+  transition: transform 500ms ease-out;
+  /* Transition effects on hover (color) */
+  overflow: hidden;
+}
+
+.mobile-nav__links {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.mobile-nav__links a {
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #00B1FF;
+  display: block;
+}
+
+.mobile-nav__links a:hover, .mobile-nav__links a:focus {
+  color: #4CC8FF;
+}
+
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  outline: none;
+}
+
+.hamburger:hover {
+  opacity: 0.7;
+}
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 40px;
+  height: 5px;
+  background-color: #00587F;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+
+.hamburger-inner::before {
+  top: -10px;
+}
+
+.hamburger-inner::after {
+  bottom: -10px;
+}
+
+.hamburger--spring .hamburger-inner {
+  top: 2px;
+  transition: background-color 0s 0.13s linear;
+}
+
+.hamburger--spring .hamburger-inner::before {
+  top: 10px;
+  transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spring .hamburger-inner::after {
+  top: 20px;
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spring.is-active .hamburger-inner {
+  transition-delay: 0.22s;
+  background-color: transparent;
+}
+
+.hamburger--spring.is-active .hamburger-inner::before {
+  top: 0;
+  transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+  background-color: white;
+}
+
+.hamburger--spring.is-active .hamburger-inner::after {
+  top: 0;
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translate3d(0, 10px, 0) rotate(-45deg);
+  background-color: white;
+
+}
+
+/*
+           * Spring Reverse
+           */
+
+.hamburger--spring-r .hamburger-inner {
+  top: auto;
+  bottom: 0;
+  transition-duration: 0.13s;
+  transition-delay: 0s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spring-r .hamburger-inner::after {
+  top: -20px;
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0s linear;
+}
+
+.hamburger--spring-r .hamburger-inner::before {
+  transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spring-r.is-active .hamburger-inner {
+  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transition-delay: 0.22s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--spring-r.is-active .hamburger-inner::after {
+  top: 0;
+  opacity: 0;
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0s 0.22s linear;
+}
+
+.hamburger--spring-r.is-active .hamburger-inner::before {
+  top: 0;
+  transform: rotate(90deg);
+  transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.footer-contact {
+  line-height: 0.8rem;
+}
+
+@media (min-width: 40rem) {
+  footer {
+    display: flex;
     width: 100%;
-    text-align: center;
-    margin-top: 6rem;
+    justify-content: space-around;
   }
   .mobile-nav__links a {
-    padding: 0.5rem;
-    text-decoration: none;
-    font-size: 2rem;
-    color: #00B1FF;
-    display: block;
-}
-  
-  .mobile-nav__links a:hover,
-  .mobile-nav__links a:focus {
-    color: #4CC8FF; }
-  
-  .toggle-button {
-    height: 4rem;
-    background: transparent;
-    border: none;
-    cursor: pointer; }
-  
-  .toggle-button:focus {
-    outline: none; }
-  
-  .toggle-button__bar {
-    width: 36px;
-    height: 5px;
-    background-color: #00587F;
-    transition: 0.4s;
-    display: block;
-    margin: 0.6rem 0; }
-  
-  .toggle-button__bar:nth-of-type(1).rotate {
-    transform: translateY(16px) rotate(-45deg);
-    background-color: white; }
-  
-  .toggle-button__bar:nth-of-type(2).rotate {
-    opacity: 0; }
-  
-  .toggle-button__bar:nth-of-type(3).rotate {
-    transform: translateY(-16px) rotate(45deg);
-    background-color: white; }
-  
-  .footer-contact {
-    line-height: 0.8rem; }
+    font-size: 3rem;
+  }
 
-    @media (min-width: 40rem) {
-        footer {
-            display: flex;
-            width: 100%;
-            justify-content: space-around; }
-        
-          .mobile-nav__links a {
-            font-size: 3rem; }    
-    }
+  .header-brand img {
+    height: 5rem;
+  }
+}
