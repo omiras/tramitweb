@@ -2,16 +2,6 @@
   width: 100vw;
   height: 100vh; }
 
-#slider1 {
-  background-image: url("img/slider1.jpg"); }
-
-#slider2 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0) ), url("img/slider2.jpg") }
-
-#slider3 {
-  background-image: url("img/slider3.jpg"); 
-  padding-top: 47vh;}
-
 .slider {
   width: 100vw;
   height: 100%;
@@ -23,6 +13,25 @@
   padding-top: 46vh;
   font-size: 2rem;  color: white; }
 
+  #slider1 {
+    background-image: url("img/slider1.jpg"); 
+    background-position: left bottom;  
+  }
+  
+  #slider2 {
+    background-position: 15% bottom;
+    background-image: url("img/slider2.jpg");
+  }  
+  #slider3 {
+    background-image: url("img/slider3.jpg"); 
+    padding-top: 58vh;
+    background-position: 10% 90%;
+  }
+  
+    #slider4 {
+      background-image: url("img/slider4.jpg"); 
+      padding-top: 47vh;}
+
 .highlight {
   color: #009FE5;
   font-weight: 700;}
@@ -31,6 +40,17 @@
   #myslider div[id^="slider"] {
     font-size: 3rem;
     padding-left: 5rem;
-    padding-right: 5rem; } }
+    padding-right: 5rem; } 
+  
+  #slider1,#slider2,#slider3 {
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+
+  #slider4{
+    background-position: center 30%;
+  }
+  
+  }
 
 /*# sourceMappingURL=main.css.map */
