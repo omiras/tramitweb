@@ -124,6 +124,7 @@ header {
 
     .cabecera-contacto.presentacion {
         flex: 95%;
+        padding-left: 0.6rem;
     }
     .main-contacto.acciones {
         flex: 15%;
