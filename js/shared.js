@@ -13,6 +13,10 @@ toggleButton.addEventListener("click", function() {
     toggleButton.classList.toggle("is-active");
 });
 
-if (mobilecheck()) {
-    //var phoneLink = document.querySelector(".footer-contact.telephone");
+if (!mobilecheck()) {
+    var accionesMovil = document.querySelector(".main-contacto .acciones-contenedor-llamar");
+
+    if (accionesMovil) {
+        accionesMovil.remove();
+    }
 }

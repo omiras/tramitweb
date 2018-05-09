@@ -5,8 +5,71 @@ header {
     color: #00587F;
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
+
+.main-image {
+    width: 100%;
+    height: auto;
+    margin: 0 0;
+    display: block;
+    max-width: 480px;
+    min-width: 340px;
+}
+
+.main-contacto .acciones-llamar,
+.main-contacto .acciones-email,
+.main-contacto .acciones-maps {
+    margin: 0 auto;
+    display: block;   
+    border: 2px solid black;
+    border-radius: 80%;
+    height: 50px;
+}
+
+.main-contacto.horario {
+    padding: 0;
+    position: relative;
+
+}
+
+.main-contacto .horario-texto {
+    position: absolute;
+    left:5%;
+    top: 20%;
+    background-color: rgba(0, 88, 127, 0.3);
+    color: white;
+    font-size: 1.2rem;
+}
+
+#formulario h4 {
+    background-color: white;
+    padding: 0.1rem 0.2rem;
+    text-align: center;
+    line-height: 1.15rem;
+
+}
+
+#cabecera-contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.main-contacto.acciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecera-contacto.presentacion {
+    flex: 45%;
+    padding-left: 0.2rem;
+}
+
+.remove {
+    display: none !important;
+}
+
 
 .tarjeta {
     padding: 0 0.2rem;
@@ -25,6 +88,17 @@ header {
     margin: 0;
 }
 
+.main-contacto {
+    background-color: #f2f2f2;
+    padding: 0 0.2rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    padding-bottom: 0.1rem;
+}
+
+.main-contacto div {
+    line-height: 0.5rem;
+}
 
 .main-flex {
     display: flex;
@@ -32,15 +106,39 @@ header {
     align-items: center;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 40rem) {
 
     main {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        max-width: 75%;
+        max-width: 100%;
         margin: 0 auto;
         font-size: 1.15em;
+    }
+
+    #cabecera-contacto {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .cabecera-contacto.presentacion {
+        flex: 95%;
+    }
+    .main-contacto.acciones {
+        flex: 15%;
+        justify-content: space-around;
+    }
+
+    
+
+    .main-contacto .acciones-llamar,
+    .main-contacto .acciones-email,
+    .main-contacto .acciones-maps  {
+        height: 100px;
+    }
+    #formulario h4 {
+        background-color: transparent;
     }
 
     .main-flex {
@@ -54,11 +152,6 @@ header {
 
     .main-title {
         font-size: 3rem;
-    }
-
-    footer {
-        position: absolute;
-        bottom: 0;
     }
 
 }
