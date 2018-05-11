@@ -15,6 +15,7 @@ header {
     display: block;
     max-width: 480px;
     min-width: 340px;
+    background-color: transparent;
 }
 
 .main-contacto .acciones-llamar,
@@ -30,6 +31,7 @@ header {
 .main-contacto.horario {
     padding: 0;
     position: relative;
+    background-color: white;
 
 }
 
@@ -70,22 +72,9 @@ header {
     display: none !important;
 }
 
-
-.tarjeta {
-    padding: 0 0.2rem;
-}
-
-.tarjeta div {
-    padding: 0 1rem;
-    line-height: 1.4;
-    background-color: rgba(0, 88, 127, 1);
-    color:white;
-    border-radius: 4px;
-
-}
-
-.tarjeta div p{
-    margin: 0;
+.mensaje-gracias {
+    background-color: rgba(0, 88, 127, 0.3);
+    text-align: center;
 }
 
 .main-contacto {
@@ -105,6 +94,56 @@ header {
     flex-direction: column;
     align-items: center;
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2000;
+}
+.overlay.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 90%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #00B1FF;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
 
 @media (min-width: 40rem) {
 
@@ -153,6 +192,10 @@ header {
 
     .main-title {
         font-size: 3rem;
+    }
+
+    .popup {
+        width: 50%;
     }
 
 }

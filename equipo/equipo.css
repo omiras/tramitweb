@@ -59,6 +59,7 @@ header {
 
 @media (min-width: 50rem) {
     .main-title {
-        font-size: 3rem;
+        margin-top: 3rem;
+        font-size: 3.5rem;
     }
 }

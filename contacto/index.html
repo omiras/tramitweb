@@ -28,6 +28,15 @@
     </div>
 </nav>
 <body>
+        <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>Email enviado</h2>
+                    <a id="closepopup" class="close" href="#">&times;</a>
+                    <div class="content">
+                        Gracias por ponerte en contacto con Tràmit Economistes. Te responderemos lo antes posible.
+                    </div>
+                </div>
+            </div>
         <h1 class="main-title">Contacto</h1>
         <section id="cabecera-contacto" class="main-contacto" >
                 <div class="cabecera-contacto presentacion">
@@ -78,34 +87,22 @@
 
     <section id="formulario">
             <h4>También puedes usar nuestro fomulario de contacto. Te respondremos lo antes posible.</h4>
-            <form class="cf">
+            <form action="contacto.php" method="POST" class="cf">
               <div class="cf">
-                <input type="text" id="input-name" placeholder="Nombre" required>
-                <input type="email" id="input-email" placeholder="Email">
-                <input type="text" id="input-subject" placeholder="Teléfono">
+                <input name="fullname" type="text" id="input-name" placeholder="Nombre" required  maxlength="100" pattern="(?i)^(?:(?![×Þß÷þø])[-'0-9a-zÀ-ÿ])+$">
+                <input name="emailfrom" type="email" id="input-email" placeholder="Email" required maxlength="100" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}">
+                <input name="phone" type="text" id="input-subject" placeholder="Teléfono" required maxlength="20" pattern="[0-9]{6,20}">
               </div>
               <div class="cf">
-                <textarea name="message" type="text" id="input-message" placeholder="Su mensaje" required></textarea>
+                <textarea name="content" type="text" id="input-message" placeholder="Su mensaje" required maxlength="2048"></textarea>
               </div>  
               <input type="submit" value="Enviar" id="input-submit">
             </form>
     </section>
-    <div class="main-flex">
-
-
-   <!-- <section class="tarjeta">
-            <div>
-                <h3>Horario de oficina</h3>
-                <p>Invierno: 16 septiembre - 31 Julio</p
-                <p>Lunes - Viernes: 8:00 - 18:00</p>
-                <hr>
-                <p>Verano: 1 agosto - 15 Septiembre</p
-                <p>Lunes - Viernes: 8:00 - 15:00</p>
-            </div>
-    </section> -->
-</div>
 </main>
+
     <script src="../js/shared.js"></script>
+    <script src="../js/contacto.js"></script>
     <footer>
         <div class="footer-column">
             <h3>Tràmit Economistes</h3>
