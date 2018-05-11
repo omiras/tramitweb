@@ -8,8 +8,7 @@ $to = new SendGrid\Email("Marina Recio", "tramit@yopmail.com");
 $content = new SendGrid\Content("text/plain", $_POST["content"] . "\n Teléfono proporcionado: " . $_POST["phone"] );
 
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
-$apiKey = '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';
-
+$apiKey = ''; // TODO: Retrieve API KEY
 $sg = new \SendGrid($apiKey);
 $response = $sg->client->mail()->send()->post($mail);
 
