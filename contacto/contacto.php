@@ -14,5 +14,5 @@ $sg = new \SendGrid($apiKey);
 $response = $sg->client->mail()->send()->post($mail);
 
 header('Location: index.html?gracias=1');
-exit;
+exit; 
 ?>
