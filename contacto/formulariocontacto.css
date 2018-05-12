@@ -1,10 +1,11 @@
-
 form {
   max-width: 640px;
   text-align: center;
   margin: 0 auto;
-    font-family: 'Lato', sans-serif;
-padding: 0 0.2rem }
+  font-family: 'Lato', sans-serif;
+  padding: 0 0.2rem
+}
+
 form input, form textarea {
   border: 0;
   outline: 0;
@@ -20,8 +21,6 @@ form input, form textarea {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   font-family: 'Lato', sans-serif;
   font-size: 1.25rem;
-
-
 }
 
 form input:focus, form textarea:focus {
@@ -29,6 +28,7 @@ form input:focus, form textarea:focus {
   -webkit-box-shadow: 0 0px 2px #00587F !important;
   box-shadow: 0 0px 2px #00587F !important;
 }
+
 form #input-submit {
   color: white;
   background: #002C40;
@@ -39,11 +39,13 @@ form #input-submit {
   margin: 1rem auto 0 auto;
   padding: 0.1rem 0;
 }
+
 form #input-submit:hover {
   -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
   -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
   box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
 }
+
 .half {
   float: left;
   width: 48%;
@@ -57,13 +59,10 @@ form #input-submit:hover {
     margin-bottom: 0;
   }
 }
-/* Clearfix */
-.cf:before,
-.cf:after {
+
+.cf:before, .cf:after {
   content: " ";
-  /* 1 */
   display: table;
-  /* 2 */
 }
 
 .cf:after {

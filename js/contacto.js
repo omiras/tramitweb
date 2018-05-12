@@ -1,20 +1,3 @@
-// function enviarRespuesta() {
-
-//   var xmlhttp = new XMLHttpRequest();
-//   xmlhttp.onreadystatechange = function() {
-//       if (this.readyState == 4 && this.status == 200) {
-//         alert("Hemos recibido tu correo. Contestaremos en la mayor brevedad posible. Muchas gracias.");
-//         window.location.reload();
-//       }
-//   };
-  
-//   var subject = document.getElementById("input-name").innerText;
-
-//   xmlhttp.open("POST", "contacto.php", true);
-//   xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-//   xmlhttp.send("subject=test");
-       
-//   }
 
 function getQueryVariable(variable)
 {
