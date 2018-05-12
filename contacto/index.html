@@ -89,9 +89,9 @@
             <h4>También puedes usar nuestro fomulario de contacto. Te respondremos lo antes posible.</h4>
             <form action="contacto.php" method="POST" class="cf">
               <div class="cf">
-                <input name="fullname" type="text" id="input-name" placeholder="Nombre" required  maxlength="100" pattern="(?i)^(?:(?![×Þß÷þø])[-'0-9a-zÀ-ÿ])+$">
-                <input name="emailfrom" type="email" id="input-email" placeholder="Email" required maxlength="100" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}">
-                <input name="phone" type="text" id="input-subject" placeholder="Teléfono" required maxlength="20" pattern="[0-9]{6,20}">
+                <input name="fullname" autocomplete="name" "text" id="input-name" placeholder="Nombre" required  maxlength="100" pattern="(?i)^(?:(?![×Þß÷þø])[-'0-9a-zÀ-ÿ])+$">
+                <input name="emailfrom" autocomplete="email" type="email" id="input-email" placeholder="Email" required maxlength="100" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}">
+                <input name="phone" autocomplete="tel-national" type="text" id="input-subject" placeholder="Teléfono" required maxlength="20" pattern="[0-9]{6,20}">
               </div>
               <div class="cf">
                 <textarea name="content" type="text" id="input-message" placeholder="Su mensaje" required maxlength="2048"></textarea>
