@@ -48,11 +48,19 @@
     padding-left: 5rem;
     padding-right: 5rem;
   }
-  #slider1, #slider2, #slider3 {
+ #slider3 {
     background-position-y: bottom;
     background-position-x: center;
   }
   #slider4 {
-    background-position: center 30%;
+    background-position: center 26%;
+  }
+
+  #slider1 {
+     background-position: center 70%;   
+  }
+  #slider2 {
+    background-position: center 65%;   
+   
   }
 }
