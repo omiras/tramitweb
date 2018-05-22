@@ -9,14 +9,14 @@ header {
     margin-bottom: 3rem;
 }
 
-.row {
+.section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 
 }
-.row img {
+.team-member__photo {
     width: auto;
     max-width: 512px; 
     max-height: 40vh; 
@@ -25,28 +25,28 @@ header {
     filter: grayscale(100%);
 }
 
-.section-image__container:hover  img{
+.section__team-member:hover .team-member__photo{
     filter:grayscale(0);
 }
 
-.section-image__container:hover .bottom-center{
+.section__team-member:hover .team-member__description{
     display: block;
 }
 
-.bottom-center h3 {
+.team-member__description .description__name {
     color: #00B1FF;
 }
 
-.bottom-center p {
+.team-member__description .description__position {
     color:white;
 }
 
-.section-image__container {
+.section__team-member {
     position: relative;
     text-align: center;
 }
 
-.bottom-center {
+.team-member__description {
     position: absolute;
     background-color: rgba(0, 88, 127, 0.90);
     overflow: hidden;
