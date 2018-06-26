@@ -17,23 +17,23 @@
 }
 
 #slider1 {
-  background-image: url("img/slider1.jpg");
+  background-image: url("img/slider1_small.jpg");
   background-position: left bottom;
 }
 
 #slider2 {
   background-position: 15% bottom;
-  background-image: url("img/slider2.jpg");
+  background-image: url("img/slider2_small.jpg");
 }
 
 #slider3 {
-  background-image: url("img/slider3.jpg");
+  background-image: url("img/slider3_small.jpg");
   padding-top: 58vh;
   background-position: 10% 90%;
 }
 
 #slider4 {
-  background-image: url("img/slider4.jpg");
+  background-image: url("img/slider4_small.jpg");
   padding-top: 47vh;
 }
 
@@ -51,16 +51,20 @@
  #slider3 {
     background-position-y: bottom;
     background-position-x: center;
+    background-image: url("img/slider3.jpg");
   }
   #slider4 {
     background-position: center 26%;
+    background-image: url("img/slider4.jpg");
+
   }
 
   #slider1 {
      background-position: center 70%;   
+     background-image: url("img/slider1.jpg");
   }
   #slider2 {
     background-position: center 45%;   
-   
+    background-image: url("img/slider2.jpg");   
   }
 }
