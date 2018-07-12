@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /fonts/
+Disallow: /js/
+Sitemap: http://www.tramiteconomistes.com/sitemap.xml
