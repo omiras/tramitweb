@@ -4,15 +4,25 @@
     text-align: center;
 }
 
+table {
+    table-layout: fixed;
+}
 
 main {
     padding: 5rem 0.2rem 0 0.2rem;
+    overflow-x: auto;
+    display: block;
 }
 
 td, th {
     border: 1px solid #999;
     padding: 0.5rem;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
   }
+
+  
 
   @media (min-width: 40rem) {
     main {
