@@ -18,7 +18,7 @@
 
 #slider1 {
   background-image: url("img/slider1_small.jpg");
-  background-position: left bottom;
+  background-position: 50% bottom;
 }
 
 #slider2 {
