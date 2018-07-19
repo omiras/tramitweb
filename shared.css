@@ -44,7 +44,7 @@ a, a:visited {
   color: inherit;
 }
 
-footer h4 {
+footer h4, a.avisolegal{
   color: #00587F;
 }
 
