@@ -22,8 +22,6 @@ td, th {
     word-wrap: break-word;
   }
 
-  
-
   @media (min-width: 40rem) {
     main {
         padding: 3rem 15% 0 19%;
