@@ -52,6 +52,16 @@ header {
 
 }
 
+.formulario-terminos {
+    display: flex;    
+    align-items: baseline;
+}
+
+#terms-conditions {
+    box-shadow: none;
+    width: 5%;
+}
+
 #cabecera-contacto {
     display: flex;
     flex-direction: column;
@@ -81,7 +91,7 @@ header {
     background-color: #f2f2f2;
     padding: 0 0.2rem;
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 0.2rem;
     padding-bottom: 0.1rem;
 }
 
