@@ -16,31 +16,59 @@
   color: white;
 }
 
-#slider1 {
-  background-image: url("img/slider1_small.jpg");
-  background-position: 50% bottom;
-}
-
-#slider2 {
-  background-position: 15% bottom;
-  background-image: url("img/slider2_small.jpg");
-}
-
-#slider3 {
-  background-image: url("img/slider3_small.jpg");
-  padding-top: 58vh;
-  background-position: 10% 90%;
-}
-
-#slider4 {
-  background-image: url("img/slider4_small.jpg");
-  padding-top: 47vh;
-}
 
 .highlight {
   color: #009FE5;
   font-weight: 700;
 }
+
+@media (max-width: 40rem) {
+
+.webp #slider1 {
+  background-image: url("img/slider1_small.webp");
+  background-position: 50% bottom;
+}
+
+.no-webp #slider1 {
+  background-image: url("img/slider1_small.jpg");
+  background-position: 50% bottom;
+}
+
+.webp #slider2 {
+  background-position: 15% bottom;
+  background-image: url("img/slider2_small.webp");
+}
+
+.no-webp #slider2 {
+  background-position: 15% bottom;
+  background-image: url("img/slider2_small.jpg");
+}
+
+
+.webp #slider3 {
+  background-image: url("img/slider3_small.webp");
+  padding-top: 58vh;
+  background-position: 10% 90%;
+}
+
+.no-webp #slider3 {
+  background-image: url("img/slider3_small.jpg");
+  padding-top: 58vh;
+  background-position: 10% 90%;
+}
+
+.webp #slider4 {
+  background-image: url("img/slider4_small.webp");
+  padding-top: 47vh;
+}
+
+.no-webp #slider4 {
+  background-image: url("img/slider4_small.jpg");
+  padding-top: 47vh;
+}
+
+}
+
 
 @media (min-width: 40rem) {
   #myslider div[id^="slider"] {
@@ -48,22 +76,47 @@
     padding-left: 5rem;
     padding-right: 5rem;
   }
- #slider3 {
+ .webp #slider3 {
+    background-position-y: bottom;
+    background-position-x: center;
+    background-image: url("img/slider3.webp");
+  }
+
+  .no-webp #slider3 {
     background-position-y: bottom;
     background-position-x: center;
     background-image: url("img/slider3.jpg");
   }
-  #slider4 {
+
+
+  .webp #slider4 {
+    background-position: center 26%;
+    background-image: url("img/slider4.webp");
+
+  }
+
+  .no-webp #slider4 {
     background-position: center 26%;
     background-image: url("img/slider4.jpg");
 
   }
 
-  #slider1 {
+  .webp #slider1 {
      background-position: center 70%;   
-     background-image: url("img/slider1.jpg");
+     background-image: url("img/slider1.webp");
   }
-  #slider2 {
+
+  .no-webp #slider1 {
+    background-position: center 70%;   
+    background-image: url("img/slider1.jpg");
+ }
+
+ .webp #slider2 {
+    background-position: center 38%;   
+    background-image: url("img/slider2.webp");   
+  }
+
+  .no-webp #slider2 {
     background-position: center 38%;   
     background-image: url("img/slider2.jpg");   
   }
