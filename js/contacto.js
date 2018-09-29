@@ -12,7 +12,7 @@ function getQueryVariable(variable)
 
 if (getQueryVariable("gracias")==1) {
 
-  window.history.replaceState({}, document.title, "/contacto/" + "index.html");
+  window.history.replaceState({}, document.title, "/contacto-sant-feliu-guixols/" + "index.html");
 
   document.getElementById("popup1").classList.add("show");
 
