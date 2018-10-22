@@ -1,0 +1,44 @@
+.main-title{
+    color: #00587F;
+    font-size: 2rem;
+    text-align: center;
+}
+.main--subheader,
+.main--subsubheader {
+    text-align: center;  
+}
+
+.main--subheader {
+    font-size: 1.4em;  
+}
+
+.main--subsubheader {
+    color: #00B1FF;
+}
+
+table {
+    table-layout: fixed;
+}
+
+main {
+    padding: 5rem 0.2rem 0 0.2rem;
+    overflow-x: auto;
+    display: block;
+}
+
+td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
+  }
+
+  @media (min-width: 40rem) {
+    main {
+        padding: 3rem 15% 0 19%;
+    }
+    .main-title {
+        font-size: 3rem;
+    }
+  }
